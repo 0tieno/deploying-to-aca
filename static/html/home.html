@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRE03</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <img src="https://appservice.azureedge.net/images/static-apps/v3/microsoft_azure_logo.svg" width="270"
+            alt="Microsoft Azure Logo">
+    </nav>
+    <div class="center">
+        {{if .}}
+        <h2>Welcome to Microsoft Build, {{.Name}}!</h2>
+        {{else}}
+        <h2>Welcome to Microsoft Build!</h2>
+        {{end}}
+        <img src="/static/imgs/BUILD_Gif_02_v3_AdapDiff.gif" alt="BUILD Gif">
+    </div>
+</body>
+
+</html>
