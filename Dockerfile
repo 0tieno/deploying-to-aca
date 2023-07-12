@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . .
 
 # build the app
-RUN go build -o welcome_to_build .
+RUN go build -o deploy_to_aca .
 
 # expose port 8080 to the outside world
 EXPOSE 8080
 
 # command to run the executable
-CMD ["./welcome_to_build"]
+CMD ["./deploy_to_aca"]
