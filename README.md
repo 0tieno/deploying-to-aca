@@ -2,8 +2,6 @@
 
 Learn how to deploy containers to Azure Container Apps.
 
-👉 https://aka.ms/build-pre03-aca
-
 <div align="center">
   <img src="./images/aca.svg" alt="logo" />
 </div>

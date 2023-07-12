@@ -1,15 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
 	"os"
 )
 
-var name string = os.Getenv("WELCOME_NAME")
+var name string = os.Getenv("VISITOR_NAME")
 
 func main() {
+	fmt.Println(name)
 	mux := http.NewServeMux()
 
 	fileServer := http.FileServer(http.Dir("./static/"))

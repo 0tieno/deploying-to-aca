@@ -2,23 +2,26 @@
 <html>
 
 <head>
-    <title>PRE03</title>
+    <title>Deploying to Azure Container Apps</title>
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
-
 <body>
-    <nav>
-        <img src="https://appservice.azureedge.net/images/static-apps/v3/microsoft_azure_logo.svg" width="270"
-            alt="Microsoft Azure Logo">
-    </nav>
-    <div class="center">
+    <div class="navbar">
+        <img src="https://appservice.azureedge.net/images/static-apps/v3/microsoft_azure_logo.svg" alt="Microsoft Azure Logo">
+    </div>
+
+    <div class="content">
+        <div class="content-left">
         {{if .}}
-        <h2>Welcome to Microsoft Build, {{.Name}}!</h2>
+        <h1>{{.Name}}, your deployment successfully 🎉 </h1>
         {{else}}
-        <h2>Welcome to Microsoft Build!</h2>
+        <h1>Deployment successfully 🎉 </h1>
         {{end}}
-        <img src="/static/imgs/BUILD_Gif_02_v3_AdapDiff.gif" alt="BUILD Gif">
+        <p>Click <a href="https://learn.microsoft.com/azure/container-apps/">here</a> to learn more about Azure Container Apps.</p>
+        </div>
+        <div class="content-right">
+            <img src="/static/imgs/aca.svg" alt="Azure Container Apps">
+        </div>
     </div>
 </body>
-
 </html>
